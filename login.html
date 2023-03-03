@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png">
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Logowanie/Rejestracja</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="alert hide">
+          <span class="fas fa-times-circle"></span>
+          <span class="msg">Wystąpił błąd przy logowaniu</span>
+          <span class="close-btn">
+            <span class="fas fa-times"></span>
+          </span>
+        </div>
+        <div class="signin-signup">
+          <form action="dif_main.html" class="sign-in-form">
+            <h2 class="title">Zaloguj się</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" id="nazwa" placeholder="login" minlength="6" required />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" id="hasło" placeholder="hasło" minlength="6" required />
+            </div>
+            <input type="button" value="Zaloguj się" class="button" id="submit" onclick="login();"/>
+            <p class="social-text">Udostępnij naszą stronę na social media </p>
+            <div class="media">
+              <ul>
+                <li><img src="images/fb.svg"/></li>
+                <li><img src="images/twitter.svg"/></li>
+                <li><img src="images/gmail.svg"/></li>
+                <li><img src="images/insta.svg"/></li>
+            </ul> 
+            </div>
+          </form>
+          <form action="#" class="sign-up-form">
+            <h2 class="title">Zarejestruj się</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="login" id="newUsername" minlength="6" required/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="e-mail" minlength="6" required/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="hasło" id="newPassword" minlength="6" required/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="potwierdź hasło" minlength="6" required/>
+            </div>
+            <input type="button" class="button" value="Zarejestruj się" onclick="registerUser();" />
+            <p class="social-text">Udostępnij naszą stronę na social media </p>
+            <div class="media">
+              <ul>
+                <li><img src="images/fb.svg"/></li>
+                <li><img src="images/twitter.svg"/></li>
+                <li><img src="images/gmail.svg"/></li>
+                <li><img src="images/insta.svg"/></li>
+            </ul> 
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+            <div class="content">
+            <h3>Nie posiadasz konta?</h3>
+            <p>
+              Dołącz do nas. Załóż konto i odkrywaj nowe możliwości!
+            </p>
+            <button class="button transparent" id="sign-up-button">
+              Zarejestruj się
+            </button>
+            </div>
+        </div>
+
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>Posiadasz już konto?</h3>
+            <p>
+              Witaj ponownie, zaloguj się.
+            </p>
+            <button class="button transparent" id="sign-in-button">
+              Zaloguj się
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/c_button.js"></script>
+    <script src="scripts/PageR.js"></script>
+    <script src="scripts/login.js"></script>
+  </body>
+</html>
