@@ -14,14 +14,9 @@
   </head>
   <body>
     <div class="container">
-      <div class="forms-container">
-        <div class="alert hide">
-          <span class="fas fa-times-circle"></span>
-          <span class="msg">Wystąpił błąd przy logowaniu</span>
-          <span class="close-btn">
-            <span class="fas fa-times"></span>
-          </span>
-        </div>
+
+     
+      <div class="forms-container">  
         <div class="signin-signup">
           <form action="dif_main.html" class="sign-in-form">
             <h2 class="title">Zaloguj się</h2>
@@ -33,7 +28,7 @@
               <i class="fas fa-lock"></i>
               <input type="password" id="hasło" placeholder="hasło" minlength="6" required />
             </div>
-            <input type="button" value="Zaloguj się" class="button" id="submit" onclick="login();"/>
+            <input type="button" value="Zaloguj się" class="button"/>
             <p class="social-text">Udostępnij naszą stronę na social media </p>
             <div class="media">
               <ul>
@@ -62,7 +57,7 @@
               <i class="fas fa-lock"></i>
               <input type="password" placeholder="potwierdź hasło" minlength="6" required/>
             </div>
-            <input type="button" class="button" value="Zarejestruj się" onclick="registerUser();" />
+            <input type="button" class="button" value="Zarejestruj się"  />
             <p class="social-text">Udostępnij naszą stronę na social media </p>
             <div class="media">
               <ul>
@@ -77,6 +72,7 @@
       </div>
 
       <div class="panels-container">
+      
         <div class="panel left-panel">
             <div class="content">
             <h3>Nie posiadasz konta?</h3>
@@ -105,8 +101,8 @@
     </div>
 
     <script src="scripts/app.js"></script>
-    <script src="scripts/c_button.js"></script>
+   <!-- <script src="scripts/c_button.js"></script>
     <script src="scripts/PageR.js"></script>
-    <script src="scripts/login.js"></script>
+    <script src="scripts/login.js"></script>-->
   </body>
 </html>
